@@ -1,5 +1,5 @@
 // import logo from './asset/logo.svg';
-import '../css/Root.css';
+import '../css/Root.scss';
 
 function Root() {
   return (
