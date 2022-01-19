@@ -18,16 +18,16 @@ class Root extends React.Component {
   render() {
     const { navbarSelected } = this.state
 
-    //via "navbarSelected" state show home or tagsComponent. start
+    //  via "navbarSelected" state show home or tagsComponent. start
     let contentComponent
     if (navbarSelected === "home") {
       contentComponent = <div className="home-content">Home Content</div>
-    } else if(navbarSelected === "tags") {
+    } else if (navbarSelected === "tags") {
       contentComponent = <div className="tags-content">Tags Content</div>
     } else {
       contentComponent = <div className="home-content">Home Content</div>
     }
-    //via "navbarSelected" state show home or tagsComponent. end
+    //  via "navbarSelected" state show home or tagsComponent. end
 
     return (
       <div className="Root">
