@@ -1,6 +1,8 @@
 import "../css/Root.scss"
 import React from "react"
 import Navbar from "./Navbar"
+import HomeContent from "./HomeContent"
+import TagsContent from "./TagsContent"
 
 class Root extends React.Component {
   constructor(props) {
@@ -21,11 +23,9 @@ class Root extends React.Component {
     //  via "navbarSelected" state show home or tagsComponent. start
     let contentComponent
     if (navbarSelected === "home") {
-      contentComponent = <div className="home-content">Home Content</div>
+      contentComponent = <HomeContent />
     } else if (navbarSelected === "tags") {
-      contentComponent = <div className="tags-content">Tags Content</div>
-    } else {
-      contentComponent = <div className="home-content">Home Content</div>
+      contentComponent = <TagsContent />
     }
     //  via "navbarSelected" state show home or tagsComponent. end
 

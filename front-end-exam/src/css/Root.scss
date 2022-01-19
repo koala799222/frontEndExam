@@ -13,12 +13,12 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
+  .content{
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.home-content {
-  height: 100%;
-  width: 100%;
-}
 
 .foller-wrapper {
   z-index: 1;
