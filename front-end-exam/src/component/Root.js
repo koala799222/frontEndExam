@@ -17,6 +17,18 @@ class Root extends React.Component {
 
   render() {
     const { navbarSelected } = this.state
+
+    //via "navbarSelected" state show home or tagsComponent. start
+    let contentComponent
+    if (navbarSelected === "home") {
+      contentComponent = <div className="home-content">Home Content</div>
+    } else if(navbarSelected === "tags") {
+      contentComponent = <div className="tags-content">Tags Content</div>
+    } else {
+      contentComponent = <div className="home-content">Home Content</div>
+    }
+    //via "navbarSelected" state show home or tagsComponent. end
+
     return (
       <div className="Root">
         {/* pageLayout   */}
@@ -25,7 +37,7 @@ class Root extends React.Component {
           onNavBarSelectChange={this.onNavBarSelectChange}
         />
         <div className="content-wrapper">
-          <div className="home-content">Home Content</div>
+          {contentComponent}
           <div className="foller-wrapper">Follower Wrapper</div>
         </div>
       </div>
