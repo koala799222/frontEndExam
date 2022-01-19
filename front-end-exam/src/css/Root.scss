@@ -7,55 +7,6 @@
   color: white;
 }
 
-.navbar {
-  z-index: 1;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #1b1b1b;
-  align-items: center;
-  .navbar_logo {
-    margin-top: 37px;
-    background: #1b1b1b;
-    pointer-events: none;
-  }
-
-  .navbar_home {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-    span {
-      /* Caption / Regular */
-      font-family: Ubuntu;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 150%;
-      /* identical to box height, or 18px */
-      letter-spacing: 0.4px;
-      color: #ffffff;
-    }
-  }
-
-  .navbar_tags {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-    span {
-      /* Caption / Regular */
-      font-family: Ubuntu;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 150%;
-      /* identical to box height, or 18px */
-      letter-spacing: 0.4px;
-      color: #ffffff;
-    }
-  }
-}
-
 .content-wrapper {
   display: flex;
   flex-direction: row;
