@@ -1,0 +1,45 @@
+.Page {
+  box-sizing: border-box;
+}
+
+.Watch {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+  .react-clock__hand__body {
+    //時針 分針
+    background-color: #c0d7aa;
+    &.react-clock__hour-hand__body {
+      background-color: #346f04;
+    }
+  }
+  .react-clock__mark__body {
+    //每個小時標記
+    background-color: #425a85;
+  }
+}
+
+.Watch div {
+  border-color: #7a88a2;
+}
+
+.Alert {
+  animation-name: alertMode;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes alertMode {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: green;
+  }
+}
