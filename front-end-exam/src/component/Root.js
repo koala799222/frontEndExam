@@ -1,8 +1,9 @@
 import "../css/Root.scss"
 import React from "react"
 import Navbar from "./Navbar"
-import HomeContent from "./HomeContent"
+import WeakupContent from "./WeakupContent"
 import TagsContent from "./TagsContent"
+import WeakupList from "./WeakupList"
 
 class Root extends React.Component {
   constructor(props) {
@@ -23,9 +24,11 @@ class Root extends React.Component {
     //  via "navbarSelected" state show home or tagsComponent. start
     let contentComponent
     if (navbarSelected === "home") {
-      contentComponent = <HomeContent />
+      contentComponent = <WeakupContent />
     } else if (navbarSelected === "tags") {
       contentComponent = <TagsContent />
+    } else if (navbarSelected === "weakupList") {
+      contentComponent = <WeakupList />
     }
     //  via "navbarSelected" state show home or tagsComponent. end
 
@@ -38,7 +41,7 @@ class Root extends React.Component {
         />
         <div className="content-wrapper">
           {contentComponent}
-          <div className="foller-wrapper">Follower Wrapper</div>
+          {/* <div className="foller-wrapper">Follower Wrapper</div> */}
         </div>
       </div>
     )
